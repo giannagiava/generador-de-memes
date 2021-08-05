@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de memes</title>
+
+    <!--- Link Estilos css -->
+    <link rel="stylesheet" href="estilos.css" />
+
+    <!--- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--- link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--- INICIO NAV -->
+
+    <nav>
+      <div>
+        <h1>Generador de Memes</h1>
+      </div>
+
+      <div class="botones-nav-principal">
+        <button>
+          <i class="fa fa-image" aria-hidden="true"></i>
+          Imagen
+        </button>
+
+        <button>
+          <i class="fa fa-font" aria-hidden="true"></i>
+          Texto
+        </button>
+
+        <button>
+          <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+          Modo oscuro
+        </button>
+      </div>
+    </nav>
+
+    <!--- INICIO MAIN -->
+
+    <main>
+      <section>
+        <div class="contenedor-meme">
+          <p>TOP TEXT</p>
+          <div id="imagen-meme"></div>
+          <p>BOTTOM TEXT</p>
+        </div>
+      </section>
+
+      <button class="boton-descargar-meme">
+        <i class="fa fa-download" aria-hidden="true"></i>
+        Descargar meme
+      </button>
+    </main>
+
+    <!--- INICIO ASIDE -->
+
+    <aside>
+      <form action="">
+        <h2>IMAGEN</h2>
+
+        <fieldset>
+          <h3>URL</h3>
+          <input type="text" />
+        </fieldset>
+
+        <fieldset>
+          <h3>FONDO</h3>
+          <div class="contenedor-input-color">
+          <input type="color" value="#FFFFFF" />
+          <span>#FFFFFF</span>
+        </div>
+        <div>
+          <select class="estilos-fondo-img" name="" id="">
+            <option value="unset">Ninguno</option>
+            <option value="unset">Aclarar</option>
+            <option value="unset">Oscurecer</option>
+            <option value="unset">Diferencia</option>
+            <option value="unset">Luminosidad</option>
+            <option value="unset">Multiplicar</option>
+          </select>
+        </div>
+
+        </fieldset>
+
+        <fieldset class="contenedor-filtros">
+          <h3>FILTROS</h3>
+
+          <label for="">BRILLO</label>
+          <input type="range" />
+        
+          <label for="">OPACIDAD</label>
+          <input type="range" />
+
+          <label for="">CONTRASTE</label>
+          <input type="range" />
+
+          <label for="">DESENFOQUE</label>
+          <input type="range" />
+
+          <label for="">ESCALA DE GRISES</label>
+          <input type="range" />
+
+          <label for="">SEPIA</label>
+          <input type="range" />
+
+          <label for="">HUE</label>
+          <input type="range" />
+
+          <label for="">SATURADO</label>
+          <input type="range" />
+
+          <label for="">NEGATIVO</label>
+          <input type="range" />
+        </fieldset>
+
+        <button>Reestablecer filtros</button>
+      </form>
+    </aside>
+
+    <script src="index.js"></script>
+  </body>
+</html>
