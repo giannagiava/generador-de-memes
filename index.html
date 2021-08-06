@@ -70,7 +70,7 @@
     <!--- INICIO ASIDE -->
 
     <aside>
-      <form action="">
+      <form action="imagen">
         <h2>IMAGEN</h2>
 
         <fieldset>
@@ -80,21 +80,22 @@
 
         <fieldset>
           <h3>FONDO</h3>
-          <div class="contenedor-input-color">
-          <input type="color" value="#FFFFFF" />
-          <span>#FFFFFF</span>
-        </div>
-        <div>
-          <select class="estilos-fondo-img" name="" id="">
-            <option value="unset">Ninguno</option>
-            <option value="unset">Aclarar</option>
-            <option value="unset">Oscurecer</option>
-            <option value="unset">Diferencia</option>
-            <option value="unset">Luminosidad</option>
-            <option value="unset">Multiplicar</option>
-          </select>
-        </div>
-
+          <div class="contenedor-fondo">
+            <div class="contenedor-input-color">
+              <input class="input-color" type="color" value="#FFFFFF" />
+              <span>#FFFFFF</span>
+            </div>
+            <div>
+              <select class="estilos-fondo-img" name="" id="">
+                <option value="unset">Ninguno</option>
+                <option value="unset">Aclarar</option>
+                <option value="unset">Oscurecer</option>
+                <option value="unset">Diferencia</option>
+                <option value="unset">Luminosidad</option>
+                <option value="unset">Multiplicar</option>
+              </select>
+            </div>
+          </div>
         </fieldset>
 
         <fieldset class="contenedor-filtros">
@@ -102,7 +103,7 @@
 
           <label for="">BRILLO</label>
           <input type="range" />
-        
+
           <label for="">OPACIDAD</label>
           <input type="range" />
 
@@ -128,7 +129,7 @@
           <input type="range" />
         </fieldset>
 
-        <button>Reestablecer filtros</button>
+        <button id="boton-reestablecer-filtros">Reestablecer filtros</button>
       </form>
     </aside>
 

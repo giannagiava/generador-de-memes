@@ -82,8 +82,7 @@ main{
 aside{
     background-color: #252935;
     width: 20%;
-    height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     padding: 30px 15px;
@@ -100,13 +99,32 @@ form fieldset{
     margin: 15px 0 15px 0;
     border: 0;
 }
-
-
-.contenedor-input-color{
-    background-color: #30343F;
+input,select{
+    padding: 10px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: #4e5565;
+}
+.contenedor-fondo{
+    display: flex;
+    justify-content: space-between;
 }
 
 .contenedor-filtros{
     display: flex;
     flex-direction: column;
+}
+input[type=range]{
+    outline: 0;
+    border-radius: 10px;
+    background-color: #5a5d68;
+}
+#boton-reestablecer-filtros{
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: #ffff;
+    background-color: #4e5565;
 }
